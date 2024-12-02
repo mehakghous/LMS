@@ -1,0 +1,26 @@
+:root{
+    --offconvas-width: 270px;
+    --top-nav-bar-height: 60px;
+}
+.sidebar-nav{
+ width : var(--offconvas-width) !important;
+}
+.img{
+    border-radius: 50% ;
+}
+
+
+@media (min-width:992px) {
+    .offcanvas-backdrop{
+       display: none !important;
+    }
+    
+    .sidebar-nav{
+        transform: none !important;
+        visibility: visible !important;
+        top: var(--top-nav-bar-height) !important;
+    }
+    main{
+        margin-left: var(--offconvas-width) !important;
+    }
+}
